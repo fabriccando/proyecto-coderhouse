@@ -9,48 +9,83 @@
 /* index */
 /* index */
 /* index */
-@font-face {
+@font-face{
     font-family: "CormorantSC-Regular" ;
     src: url("../fuente/cormorant/CormorantSC-Regular.ttf");
 }
-header{
-    background: linear-gradient(to bottom,  #ec5766 0%,#da344d 50%,#d91e36 100%); 
+
+.encabezado{
+    background: linear-gradient(to bottom,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 0%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 64%,rgba(10,10,10,1) 64%,rgba(10,10,10,1) 72%,rgba(78,78,78,1) 100%,rgba(56,56,56,1) 100%,rgba(27,27,27,1) 100%,rgba(56,56,56,1) 100%,rgba(78,78,78,1) 100%);
+ 
     font-family: "CormorantSC-Regular";
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1{
-    text-align: center;
-    padding: 10px;
+.encabezado__titulo{
+    padding: 0.625em;
+    color: #ffffff;
+}
+
+
+/* lo mismo que el de abajo pero aplicado de esta forma para todas las pages */
+
+.encabezado__imagen{
+    width: 7.1875em;
+    margin-bottom: 1.5625em;
+    border-radius: 3.125rem;
+    border-style: hidden;
+    align-self: center;
     
-}
-
-div a img{
-    /* lo mismo que el de abajo pero aplicado de esta forma para todas las pages */
-    margin-left: 47%;
-    width: 6%;
-    border-radius: 5px;
-    border-style: hidden;
-}
-
-/* .encabezado__imagen{
-    margin-left: 47%;
-    width: 6%;
-    border-radius: 5px;
-    border-style: hidden;
-} */
+    
+} 
 
 .item{
+    height: auto;
+    width: auto;
+    padding: 0.5em;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: space-between;
 }
 
+.item__primero{
+    width: 9.375 ;
+    margin: 0.5em;      
+}
 
+.item__primero--imagen{
+    width: 1.875em;
+}
 
+.item__segundo{
+    margin: 0.5em; 
+}
+
+.item__segundo--imagen{
+    width: 1.875em;
+}
+
+.item__tercero{
+    margin: 0.5em; 
+}
+
+.item__tercero--imagen{
+    width: 1.875em;
+}
+
+.item__cuarto{
+    margin: 0.5em; 
+}
+
+.item__cuarto--imagen{
+    margin: 0.5em;
+    width: 1.875em;
+}
 
 /* nav */
 /* nav */
@@ -58,23 +93,19 @@ div a img{
 .barra{
     background-color: rgb(86, 7, 12);
     list-style-type: style none; 
-    text-align: left;  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
+    text-align: left;      
 }
 
 .barra li{
     display: inline-block;
     text-align: left;
-    padding: 10px;
+    padding: 0.625em;
 }
 
 .barra li a{
-    padding: 10px;
+    padding: 0.625em;
     color: whitesmoke;
-    margin: 10px;
+    margin: 0.625em;
     text-decoration: none;
 }
 
@@ -92,25 +123,26 @@ body{
 }
 
 .about-us__titulo{
-    margin-left: 4px;
-    font-size: 50px;
-    text-decoration: underline;
+    margin-left: 0.625em;
+    font-size: 3.125em;
 }
 .about-us__subtitulo{
-    margin: 15px;
-    font-size: 45px;
+    margin: 0.9375em;
+    font-size: 2.8125em;
 }
 
 .about-us__biografia{
     text-align: left;
-    font-size: 20px;
-    margin: 15px;
+    font-size: 1.5625em;
+    margin: 0.9375em;
 }
 
 .about-us__segundo-titulo{
     text-align: center;
-    font-size: 35px;
+    font-size: 2.1875em;
+    margin: 0.9375em;
 }
+
 
 /* Novedades */
 /* Novedades */
@@ -150,7 +182,7 @@ body{
 .box h6{
     font-size: larger;
     color: brown;
-    margin: 10px;
+    margin: 0.625em;
 }
 
 
@@ -163,50 +195,65 @@ body{
     text-align: center
 }
 
-.box-ventas{
+.box__ventas{
     margin-top: 2%;
     margin-bottom: 3%;
     margin-left: 5%;
     margin-right: 5%;
-    border: 2px;
+    border: 0.125em;
     border-style: solid;
     border-color: #BBAB8C;
 }
 
-.box-customer-support{
+.box__ventas--imagen{
+    width:4.375em ;
+}
+
+.box__customer-support{
     margin-top: 2%;
     margin-bottom: 3%;
     margin-left: 10%;
     margin-right: 10%;
-    border: 2px;
+    border: 0.125em;
     border-style: solid;
     border-color: #BBAB8C;
 }
 
-.box-redes{
+.box-customer-support__imagen{
+    width:3.75em ;
+}
+
+.box__redes{
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 15%;
     margin-right: 15%;
-    border: 2px;
+    border: 0.125em;
     border-style: solid;
     border-color: #BBAB8C;
 }
 
-.redes__logo{
-    width: 120px;
-    margin-left: 46%;
+.box__redes--imagen{
+    width: 7.5em;
+    margin-left: 10%; /* Elegir bien distancia */
     margin-top: 2%;
     margin-bottom: 2%;
+    
 }
 
-.redes__titulo{
+.box__redes--titulo{
     text-align: center;
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
+.box__redes--logo--instagram{
+    width: 3.125em;    
+}
 
+.box__redes--logo--wpp{
+    width:3.125em;
+}
 
 
 
