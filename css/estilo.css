@@ -14,32 +14,86 @@
     src: url("../fuente/cormorant/CormorantSC-Regular.ttf");
 }
 
+/* contenedor */
+/* contenedor */
+/* contenedor */
+.container {
+display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.8fr 0.1fr 1fr 0.5fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer"; 
+  }
+
+.header {
+    justify-self: stretch; 
+    grid-area: header;
+    }
+
+.nav { grid-area: nav; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+
+
+/* header */
+/* header */
+/* header */
+
 .encabezado{
     background: linear-gradient(to bottom,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 0%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 64%,rgba(10,10,10,1) 64%,rgba(10,10,10,1) 72%,rgba(78,78,78,1) 100%,rgba(56,56,56,1) 100%,rgba(27,27,27,1) 100%,rgba(56,56,56,1) 100%,rgba(78,78,78,1) 100%);
- 
     font-family: "CormorantSC-Regular";
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content:space-between;
 }
 
 .encabezado__titulo{
     padding: 0.625em;
-    color: #ffffff;
+    margin: 1.5625em ;
+    color: #E6DDCF;
+    align-self:flex-end;
 }
 
-
-/* lo mismo que el de abajo pero aplicado de esta forma para todas las pages */
-
 .encabezado__imagen{
-    width: 7.1875em;
-    margin-bottom: 1.5625em;
+    width:7.1875em;
+    margin: 1.5625em;
     border-radius: 3.125rem;
     border-style: hidden;
     align-self: center;
     
     
 } 
+
+/* nav */
+/* nav */
+/* nav */
+.nav{
+    background: linear-gradient(to right,  #efb810 0%,#f3c332 40%,#daa520 60%,#f3c332 100%);
+    list-style-type: style none; 
+    text-align: left;      
+}
+
+.nav li{
+    display: inline-block;
+    text-align: left;
+    padding: 0.625em;
+}
+
+.nav li a{
+    padding: 0.625em;
+    color: rgb(0, 0, 0);
+    margin: 0.625em;
+    text-decoration: none;
+}
+
+/* main */
+/* main */
+/* main */
 
 .item{
     height: auto;
@@ -87,27 +141,9 @@
     width: 1.875em;
 }
 
-/* nav */
-/* nav */
-/* nav */
-.barra{
-    background-color: rgb(86, 7, 12);
-    list-style-type: style none; 
-    text-align: left;      
-}
-
-.barra li{
-    display: inline-block;
-    text-align: left;
-    padding: 0.625em;
-}
-
-.barra li a{
-    padding: 0.625em;
-    color: whitesmoke;
-    margin: 0.625em;
-    text-decoration: none;
-}
+/* footer */
+/* footer */
+/* footer */
 
 
 
@@ -115,11 +151,11 @@
 /* about us */
 /* about us */
 .about-us{
-    background-color: #F9EFDB;
+    background-color: #E6DDCF;
 }
 
 body{
-    background-color: #F9EFDB;
+    background-color: #E6DDCF;
 }
 
 .about-us__titulo{
@@ -171,7 +207,7 @@ body{
 }
 
 .tienda{
-    background-color: #BBAB8C;
+    background-color: #E6DDCF;
 }
 
 .box{
@@ -181,7 +217,7 @@ body{
 
 .box h6{
     font-size: larger;
-    color: brown;
+    color: #0a0a0a;
     margin: 0.625em;
 }
 
@@ -191,15 +227,28 @@ body{
 /*Contacto*/
 /*Contacto*/
 .contacto{
-    background-color: #F9EFDB;
+    background-color: #E6DDCF;
     text-align: center
 }
 
+.contacto__titulo{
+    padding: 1em;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .box__ventas{
-    margin-top: 2%;
-    margin-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 2em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
     border: 0.125em;
     border-style: solid;
     border-color: #BBAB8C;
@@ -210,31 +259,33 @@ body{
 }
 
 .box__customer-support{
-    margin-top: 2%;
-    margin-bottom: 3%;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 2em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
     border: 0.125em;
     border-style: solid;
     border-color: #BBAB8C;
 }
 
 .box-customer-support__imagen{
-    width:3.75em ;
+    width:5.625em;    
 }
 
 .box__redes{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
+    padding: 2em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
     border: 0.125em;
     border-style: solid;
     border-color: #BBAB8C;
 }
 
 .box__redes--imagen{
-    width: 7.5em;
+    width: 7em;
     margin-left: 10%; /* Elegir bien distancia */
     margin-top: 2%;
     margin-bottom: 2%;
