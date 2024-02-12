@@ -50,13 +50,13 @@ display: grid;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    
 }
 
 .encabezado__titulo{
     padding: 0.625em;
     margin: 1.5625em ;
     color: #E6DDCF;
-    align-self:flex-end;
 }
 
 .encabezado__imagen{
@@ -144,18 +144,80 @@ display: grid;
 /* footer */
 /* footer */
 /* footer */
+.footer{
+    background: #daa520;
+    height: auto;
+    width:100vw;
+    font-family: "CormorantSC-Regular" ;
+    padding-top: 40px;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials li a{
+    text-decoration: none;
+    color: #e6ddcf;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
 
-
+.socials a:hover i{
+    color:#f3c332;
+}
+.footer-bottom{
+    color: #0a0a0a;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
 
 /* about us */
 /* about us */
 /* about us */
 .about-us{
-    background-color: #E6DDCF;
+    background-color: rgb(230, 221, 207);
 }
 
 body{
-    background-color: #E6DDCF;
+    background-color: rgb(230, 221, 207);
 }
 
 .about-us__titulo{
@@ -305,6 +367,7 @@ body{
 .box__redes--logo--wpp{
     width:3.125em;
 }
+
 
 
 
