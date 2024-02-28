@@ -3,76 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilo.css">
-    <title>Catalogo</title>
+    <title>Tienda</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- BOOTSTRAP --> 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/multimedia/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/multimedia/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Favicon -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
-
 <body>
-    <header>
-        <div class="encabezado">
-            <div class="encabezado__titulo"><h1>Catorce Wine</h1>
-            </div>
+    <div class="container">    
+        <header class="header">
+            <div class="encabezado">
                 <div>
-                    <a href="/index.html">
-                    <img class="encabezado__imagen" src="/multimedia/logo catorce wine editado.png" alt="Logo de la empresa">
+                    <a href="../index.html">
+                    <img class="encabezado__imagen" src="../multimedia/logos/logo-catorce-wine-editado.png" alt="Logo de la empresa">
                     </a>
-                
                 </div>
-        </div>
-    </header>
-    <nav class="barra">
-        <!-- Barra de navegacion |Editar en css -->
-        <ul>
-            <li><a href="/pages/about_us.html">Sobre nosotros</a></li>
-            <li><a href="/pages/novedades.html">Novedades</a></li>
-            <li><a href="/pages/tienda.html">Catalogo</a></li>
-            <li><a href="/pages/contacto.html">Consultas y ventas</a></li>
+                <div class="encabezado__titulo"><h1>Catorce Wine</h1>
+                </div>
+            </div><!-- clase header -->
+        </header>
+        <nav class="nav">
+            <!-- Barra de navegacion |Editar en css -->
+            <ul>
+            <li><a href="./about_us.html">Sobre    nosotros</a></li>
+            <li><a href="./novedades.html">Novedades</a></li>
+            <li><a href="./tienda.html">Catalogo</a></li>
+            <li><a href="./contacto.html">Consultas y  ventas</a></li>
             </ul>
-    </nav>
+        </nav>
+        <section class="contenido">
+            <div class="mostrador" id="mostrador">
+                <div class="fila" onclick="cargar(this)">
+                    <div class="item"> <!-- producto 1 -->
+                       <div class="contenedor-foto">
+                            <img class="img" src="../multimedia/productos/matervini-blanco.png"alt="imagen-vino-matervini-blanco">
+                            <p class="descripcion">Matervini Blanco</p>
+                            <span class="precio">$ 4.000</span>
+                       </div> 
+                    </div>
+                    <div class="item"  onclick="cargar(this)"> <!-- producto 2 -->
+                        <div class="contenedor-foto">
+                             <img src="../multimedia/productos/matervini-clacha.png" alt="imagen-vino-matervini-clacha">
+                             <p class="descripcion">Matervini Clacha</p>
+                             <span class="precio">$ 4.000</span>
+                        </div> 
+                     </div>
+                     <div class="item"  onclick="cargar(this)"> <!-- producto 3 -->
+                        <div class="contenedor-foto">
+                             <img src="../multimedia/productos/matervini-tinto.png" alt="imagen-vino-matervini-tinto">
+                             <p class="descripcion">Matervini Tinto</p>
+                             <span class="precio">$ 4.000</span>
+                        </div> 
+                     </div>
+                     <div class="item"  onclick="cargar(this)"> <!-- producto 4 -->
+                        <div class="contenedor-foto">
+                             <img src="../multimedia/productos/rompecabezas-blend.png" alt="imagen-vino-dv-catena">
+                             <p class="descripcion">DV. Catena Cabernet-Cabernet</p>
+                             <span class="precio">$ 4.000</span>
+                        </div> 
+                     </div>
+                     <div class="item"  onclick="cargar(this)"> <!-- producto 5 -->
+                        <div class="contenedor-foto">
+                             <img src="../multimedia/productos/dv-catena-cabernet-cabernet.png" alt="imagen-vino-dv-catena">
+                             <p class="descripcion">DV. Catena Cabernet-Cabernet</p>
+                             <span class="precio">$ 4.000</span>
+                        </div> 
+                     </div>
+                </div>
+                <div class="fila">
+                    <div class="item"  onclick="cargar(this)"> <!-- producto 6 -->
+                       <div class="contenedor-foto">
+                            <img src="../multimedia/productos/algarrobogrande-malbec.png" alt="imagen-vino-agarrobo-grande">
+                            <p class="descripcion">Algarrobo Grande Malbec</p>
+                            <span class="precio">$ 4.000</span>
+                       </div> 
+                    </div>
+                    <div class="item"  onclick="cargar(this)"> <!-- producto 7 -->
+                        <div class="contenedor-foto"> 
+                             <img src="../multimedia/productos/brut-rose-espumante-frances.png" alt="imagen-espumante-frances">
+                             <p class="descripcion">Brut Rosé - Espumante frances</p>
+                             <span class="precio">$ 4.000</span>
+                        </div> 
+                     </div>
+                     <div class="item"  onclick="cargar(this)"> <!-- producto 8 -->
+                        <div class="contenedor-foto">
+                             <img src="../multimedia/productos/kamala-cabernet-franc-rose.png" alt="imagen-vino-kamala-rosé" >
+                             <p class="descripcion">Kamala Cabernet - franc-rose</p>
+                             <span class="precio">$ 4.000</span>
+                        </div> 
+                     </div>
+                     <div class="item"  onclick="cargar(this)"> <!-- producto 9 -->
+                        <div class="contenedor-foto">
+                             <img src="../multimedia/productos/kamala-criolla.png" alt="imagen-vino-kamala-criolla">
+                             <p class="descripcion">Kamala Criolla</p>
+                             <span class="precio">$ 4.000</span>
+                        </div> 
+                     </div>
+                     <div class="item"  onclick="cargar(this)"> <!-- producto 10 -->
+                        <div class="contenedor-foto">
+                             <img src="../multimedia/productos/kamala-naranjo.png" alt="imagen-vino-kamala-naranjo">
+                             <p class="descripcion">Kamala Naranjo</p>
+                             <span class="precio">$ 4.000</span>
+                        </div> 
+                     </div>
+                </div>
+            </div>  
+            
+            <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="../multimedia/productos/matervini-blanco.png" alt="" id="img">
+                <h2 id="modelo">Vino Matervini Blanco</h2>
+                <p id="descripcion">Descripción</p>
 
-    
-    <main class="tienda">
-        <h2 class="tienda__titulo">Tienda.</h2>
-        <div class="box">
-            <fieldset>
-                <legend> Vino Misterio-Cabernet</legend>
-                <img src="/multimedia/misterio-Cabernet-v.webp" alt="Vino misterio" width="45px"
-                
-                <!-- cambiar tamaño css -->>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, architecto. Corporis, praesentium officia. Delectus labore tempora error facilis iusto. Ad debitis consequuntur quod doloremque aliquid laboriosam deserunt quia est corporis.</p>
-                <br>
-                <fieldset>
-                <h6>$3.800</h6>
-            </fieldset>
-            </fieldset>
+                <span class="precio" id="precio">$ 1450</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">Unidades</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            <fieldset>
-                <legend> Vino Otro loco más</legend>
-                <img src="/multimedia/otro loco mas-O.webp" alt="Vino Otro loco más" width="100px">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, architecto. Corporis, praesentium officia. Delectus labore tempora error facilis iusto. Ad debitis consequuntur quod doloremque aliquid laboriosam deserunt quia est corporis.</p>
-                <br>
-                <fieldset>
-                    <h6>$7.000</h6>
-                </fieldset>   
-            </fieldset>
-        </div>
-        <div class="box">
-            <fieldset>
-                <legend> Vino Dilema</legend>
-                <img src="/multimedia/vino dilema blancoO.webp" alt="Vino Dilema" width="40px">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, architecto. Corporis, praesentium officia. Delectus labore tempora error facilis iusto. Ad debitis consequuntur quod doloremque aliquid laboriosam deserunt quia est corporis.</p>
-                <br>
-                <fieldset><h6>$9.600</h6>
-                </fieldset>
-            </fieldset>
-        </div>
-
-    </main>
-    <footer>
-
-
-    </footer>
-    
+        </section>
+        <script src="../js/script.js"></script>
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>Catorce Wine</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
+                <ul class="socials">
+                    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjsw9vIuKaEAxUIrZUCHeXFBZcQFnoECA0QAQ&url=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA&usg=AOvVaw1I60-Ja6y72-wCvsxEihv7&opi=89978449" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiVnNXTuKaEAxU8r5UCHfbVDdcQFnoECA0QAQ&url=https%3A%2F%2Ftwitter.com%2F%3Flang%3Des&usg=AOvVaw3YX5z3gmuFXXOazOkLuKS1&opi=89978449" target="_blank"><i class="fab fa-x"></i></a></li>
+                    <li><a href="https://www.instagram.com/catorcewine/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwirz-jtuKaEAxXbppUCHX6MBZkQFnoECDEQAQ&url=https%3A%2F%2Fwww.youtube.com%2F%3Fgl%3DAR&usg=AOvVaw1ESjSyIKPnAQtftr76nLbD&opi=89978449" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2024 Catorce Wine.</p>
+            </div>
+        </footer>
+    </div> <!-- container -->
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
