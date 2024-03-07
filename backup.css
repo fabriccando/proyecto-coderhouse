@@ -63,12 +63,11 @@
     margin: 1.5625em;
     border-radius: 3.125rem;
     border-style: hidden;
-    align-self: center;
-    
-    
+    align-self: center;   
 } 
 
 .nav{
+    width: 100vw;
     background: linear-gradient(to right,  #efb810 0%,#f3c332 40%,#daa520 60%,#f3c332 100%);
     list-style-type: style none; 
     text-align: left; 
