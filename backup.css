@@ -32,15 +32,9 @@
     font-family: "CormorantSC-Regular";
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    
+    justify-content:space-between;   
 }
 
-.encabezado__titulo{
-    padding: 0.625em;
-    margin: 1.5625em ;
-    color: #E6DDCF;
-}
 
 .encabezado__imagen{
     width:7.1875em;
@@ -49,6 +43,12 @@
     border-style: hidden;
     align-self: center;   
 } 
+
+.encabezado__titulo{
+    padding: 0.625em;
+    margin: 1.5625em ;
+    color: #E6DDCF;
+}
 
 .nav{
     width: 100vw;
