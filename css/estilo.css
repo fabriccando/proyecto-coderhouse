@@ -21,39 +21,37 @@ body {
   background-color: rgb(230, 221, 207);
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr 0.1fr 1fr 0.5fr;
-  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer";
+.main {
+  min-height: 70vh;
 }
 
-.header {
-  justify-self: stretch;
-  grid-area: header;
-}
-.header .encabezado {
+/* index */
+/* index */
+/* index */
+.encabezado {
   background: linear-gradient(to bottom, rgb(149, 149, 149) 0%, rgb(13, 13, 13) 0%, rgb(1, 1, 1) 50%, rgb(10, 10, 10) 64%, rgb(10, 10, 10) 64%, rgb(10, 10, 10) 72%, rgb(78, 78, 78) 100%, rgb(56, 56, 56) 100%, rgb(27, 27, 27) 100%, rgb(56, 56, 56) 100%, rgb(78, 78, 78) 100%);
   font-family: "CormorantSC-Regular";
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.header .encabezado .encabezado__imagen {
+
+.encabezado__imagen {
   width: 7.1875em;
   margin: 1.5625em;
   border-radius: 3.125rem;
   border-style: hidden;
   align-self: center;
 }
-.header .encabezado .encabezado__titulo {
+
+.encabezado__titulo {
   padding: 0.625em;
   margin: 1.5625em;
   color: #E6DDCF;
 }
 
 .nav {
-  grid-area: nav;
+  width: 100vw;
   background: linear-gradient(to right, #efb810 0%, #f3c332 40%, #daa520 60%, #f3c332 100%);
   list-style-type: style none;
   text-align: left;
@@ -76,105 +74,191 @@ body {
   color: #efb810;
 }
 
-.main {
-  grid-area: main;
-}
-.main .item {
+/* main */
+/* main */
+/* main */
+.data {
   height: auto;
   width: auto;
-  padding: 0.5em;
+  width: 9.375em;
+  margin: 0.5em;
+}
+.data a:visited {
+  color: #0a0a0a;
+}
+.data a:hover {
+  transition: color 0.5s ease;
+  color: #E6DDCF;
+}
+
+.data__primero--imagen {
+  width: 1.875em;
+}
+
+.data__segundo--imagen {
+  width: 1.875em;
+}
+
+.data__tercero--imagen {
+  width: 1.875em;
+}
+
+.data__cuarto--imagen {
+  margin: 0.5em;
+  width: 1.875em;
+}
+
+/* footer */
+/* footer */
+/* footer */
+.footer {
+  background: #daa520;
+  height: auto;
+  width: 100%;
+  font-family: "CormorantSC-Regular";
+  padding-top: 40px;
+}
+
+.footer-content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-end;
-  align-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
-.main .item .item__primero {
-  width: 9.375;
-  margin: 0.5em;
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
 }
-.main .item .item__primero .item__primero--imagen {
-  width: 1.875em;
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
 }
-.main .item .item__segundo {
-  margin: 0.5em;
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
 }
-.main .item .item__segundo .item__segundo--imagen {
-  width: 1.875em;
+.socials li {
+  margin: 0 10px;
 }
-.main .item .item__tercero {
-  margin: 0.5em;
+.socials li a {
+  text-decoration: none;
+  color: #e6ddcf;
 }
-.main .item .item__tercero .item__tercero--imagen {
-  width: 1.875em;
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
 }
-.main .item .item__cuarto {
-  margin: 0.5em;
+.socials a:hover i {
+  color: #f3c332;
 }
-.main .item .item__cuarto .item__cuarto--imagen {
-  margin: 0.5em;
-  width: 1.875em;
+
+.footer-bottom {
+  color: #0a0a0a;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
 }
-.main .about-us {
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200px;
+}
+
+/* about us */
+/* about us */
+/* about us */
+.about-us {
   background-color: rgb(230, 221, 207);
   background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../multimedia/logos/fondo-aboutus.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main .about-us .about-us__titulo {
+
+body {
+  background-color: rgb(230, 221, 207);
+  font-family: "CormorantSC-Regular";
+}
+
+.about-us__titulo {
   margin-left: 0.625em;
   font-size: 3.125em;
   color: #E6DDCF;
 }
-.main .about-us .about-us__subtitulo {
+
+.about-us__subtitulo {
   margin: 0.9375em;
   font-size: 2.8125em;
   color: rgba(230, 221, 207, 0.9215686275);
 }
-.main .about-us .about-us__biografia {
+
+.about-us__biografia {
   text-align: left;
   font-size: 1.5625em;
   margin: 0.9375em;
   color: rgba(210, 197, 178, 0.9215686275);
 }
-.main .about-us .about-us__segundo-titulo {
+
+.about-us__segundo-titulo {
   text-align: center;
   font-size: 2.1875em;
   margin: 0.9375em;
   background: rgba(112, 112, 112, 0.4);
   color: #E6DDCF;
 }
-.main .news {
+
+/* Novedades */
+/* Novedades */
+/* Novedades */
+.news {
   margin-top: 3%;
   margin-left: 2.5%;
 }
-.main .news .news__form--email-input {
+
+.news__form--email-input {
   border-radius: 1%;
   color: grey;
 }
-.main .news .news__form--email-input .news__form--tell-input {
+
+.news__form--tell-input {
   border-radius: 1%;
   color: grey;
 }
-.main .contenido {
+
+/* Tienda */
+/* Tienda */
+/* Tienda */
+.contenido {
   max-width: 1200px;
   width: 100%;
   margin: 40px auto;
   display: flex;
 }
-.main .contenido .mostrador {
+
+.mostrador {
   width: 100%;
   transition: 0.5s ease;
 }
-.main .contenido .mostrador .fila {
+.mostrador .fila {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 90px;
-  /* Entre Hover y img tengo el error, a partir de ahi no se aplica lo siguiente */
 }
-.main .contenido .mostrador .fila .item {
+.mostrador .fila .item {
   max-width: 210px;
   padding: 30px;
   height: 250px;
@@ -185,12 +269,21 @@ body {
   border-radius: 5px;
   transition: 0.3s;
 }
-.main .contenido .mostrador .fila .item:hover {
+.mostrador .fila .item:hover {
   background-color: rgba(233, 215, 187, 0.825);
 }
-.main .contenido .mostrador .fila .item .contenedor-foto img {
+.mostrador .fila .item img {
   width: 100px;
   margin: 30px 0;
+}
+.mostrador .fila .item .descripcion {
+  color: #0a0a0a;
+  font-weight: bold;
+}
+.mostrador .fila .item .precio {
+  color: #f3c332;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .seleccion {
@@ -204,57 +297,130 @@ body {
   justify-content: center;
   overflow: hidden;
 }
-.seleccion .cerrar {
+
+.cerrar {
   position: absolute;
   right: 0;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
-.seleccion .info {
+
+.info {
   padding: 20px;
 }
-.seleccion .info .info img {
+.info img {
   display: block;
   margin: 30px auto;
   width: 80%;
 }
-.seleccion .info .info h2 {
+.info h2 {
   color: #0a0a0a;
   margin-bottom: 10px;
 }
-.seleccion .info .info p {
+.info p {
   font-size: 14px;
   color: #0a0a0a;
   margin-bottom: 10px;
 }
-.seleccion .info .info .precio {
+.info .precio {
   font-size: 30px;
   font-weight: bold;
   color: #daa520;
   margin-bottom: 10px;
   display: block;
 }
-.seleccion .info .info .fila {
+.info .fila {
   display: flex;
   align-items: flex-end;
 }
-.seleccion .info .info .fila .info .fila label {
+.info .fila label {
   display: block;
   margin-bottom: 10px;
 }
-.seleccion .info .info .fila .info .fila select {
+.info .fila select {
   width: 100px;
   font-size: 18px;
   padding: 6px;
   margin-right: 30px;
 }
-.seleccion .info .info .fila .info .fila button {
+.info .fila button {
   height: 70px;
   border: none;
   padding: 0 25px;
   color: #fff;
   background-color: #daa520;
+}
+
+/*Contacto*/
+/*Contacto*/
+/*Contacto*/
+.contacto {
+  background-color: #E6DDCF;
+  text-align: center;
+}
+
+.contacto__titulo {
+  padding: 1em;
+  font-size: larger;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box__ventas--imagen {
+  width: 4.375em;
+}
+
+.box-customer-support__imagen {
+  width: 4.375em;
+}
+
+.box__redes--imagen {
+  width: 4.375em;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.box__redes--logo--instagram {
+  width: 3.125em;
+}
+
+.box__redes--logo--wpp {
+  width: 3.125em;
+}
+
+/* media queries */
+/* media queries */
+/* media queries */
+@media screen and (max-width: 768px) {
+  .body {
+    grid-template-columns: 0.8fr 0.8fr;
+    grid-template-rows: 0.8fr 0.1fr 1fr 0.5fr;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+  }
+}
+@media screen and (max-width: 768px) {
+  .body {
+    grid-template-columns: 0.8fr;
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us {
+    background: linear-gradient(to top, rgb(149, 149, 149) 0%, rgb(13, 13, 13) 0%, rgb(1, 1, 1) 50%, rgb(10, 10, 10) 64%, rgb(10, 10, 10) 64%, rgb(10, 10, 10) 72%, rgb(78, 78, 78) 100%, rgb(56, 56, 56) 100%, rgb(27, 27, 27) 100%, rgb(56, 56, 56) 100%, rgb(78, 78, 78) 100%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .mostrador .fila {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */

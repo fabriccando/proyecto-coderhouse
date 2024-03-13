@@ -54,8 +54,7 @@
     width: 100vw;
     background: linear-gradient(to right,  #efb810 0%,#f3c332 40%,#daa520 60%,#f3c332 100%);
     list-style-type: style none; 
-    text-align: left; 
-         
+    text-align: left;      
 }
 
 .nav li{
@@ -85,8 +84,7 @@
     height: auto;
     width: auto;
     width: 9.375em;
-    margin: 0.5em; 
-    
+    margin: 0.5em;  
 }
 
 .data a:visited{
@@ -194,10 +192,7 @@
     background-size: cover;
 }
 
-body{
-    background-color: rgb(230, 221, 207);
-    font-family: "CormorantSC-Regular";
-}
+
 
 .about-us__titulo{
     margin-left: 0.625em;
