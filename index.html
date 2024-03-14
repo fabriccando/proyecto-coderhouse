@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catorce Wine</title>
+    <meta name="description" content="Descubre nuestra selección premium de vinos de todo el mundo. Desde tintos robustos hasta blancos refrescantes, tenemos el vino perfecto para cada ocasión. Envío rápido y seguro directo a tu puerta. Únete a nosotros en esta emocionante aventura enológica. ¡Salud!">
+    <meta name="keywords" content="Vinos tintos, Vinos blancos, Comprar vino en línea, Bodegas, Degustación de vinos, Envío de vinos, Descuentos en vinos, Catálogo de vinos, Ofertas de vinos, Vinos">
+    <title>Catorce Wine | Inicio</title>
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- BOOTSTRAP --> 
@@ -18,20 +20,18 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
-<body>
-    <div class="container">    
-        <header class="header">
-            <div class="encabezado">
-                <div>
-                    <a href="/index.html">
-                    <img class="encabezado__imagen" src="./multimedia/logo catorce wine editado.png" alt="Logo de la empresa">
-                    </a>
-                </div>
-                <div class="encabezado__titulo">
-                    <h1>Catorce Wine</h1>
-                </div>
-            </div><!-- clase header -->
-        </header>
+<body>    
+    <header>
+        <div class="encabezado">
+            <div class="encabezado__imagen">
+                <a href="./index.html">
+                    <img src="./multimedia/logos/logo-catorce-wine-editado.png" alt="Logo de la empresa">
+                </a>
+            </div>
+            <div class="encabezado__titulo">
+                <h1>Catorce Wine</h1>
+            </div>
+        </div><!-- encabezado -->
         <nav class="nav">
             <!-- Barra de navegacion |Editar en css -->
             <ul>
@@ -41,37 +41,66 @@
                 <li><a href="./pages/contacto.html">Consultas y ventas</a></li>
             </ul>
         </nav>
+        </header>
         <main class="main">
-            <div class="item">
-                <div class="item__primero">
+            <div class="carrusel ">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href="./pages/about_us.html">
+                            <img src="./multimedia/logos/frente-local.jpg" class="m-auto p-5 d-block w-60" alt="foto del frente del local"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./pages/novedades.html">
+                            <img src="./multimedia/logos/foto-vino.jpg" class=" m-auto p-5 d-block w-60" alt="foto de una caja de vinos"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./pages/tienda.html">
+                            <img src="./multimedia/logos/cajas-mercaderia.jpg" class="m-auto p-5 d-block w-60" alt="foto de la mercaderia de cajas de vino"></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href="./pages/contacto.html">
+                            <img src="./multimedia/logos/foto-comida.jpg" class="m-auto p-5 d-block w-60" alt="foto de comida con vinos de fondo"></a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="d-flex p-2 flex-wrap justify-content-around alig-items-center">
+                <div class="data">
                     <span>
-                        <img class="item__primero--imagen"  src="./multimedia/estrella.png"   alt="Imagen estrella">
-                        <p>Envios gratis CABA y GBA.</p>
-                        <p>En compras mayores a $19.000.</  p>
+
+                        <a href="./pages/tienda.html">
+                            <img class="data__primero--imagen"  src="./multimedia/logos/estrella.png" alt="Imagen estrella">
+                            <p>Envios gratis CABA y GBA. En compras mayores a $19.000.</p>
+                        </a>
                     </span>
                 </div> <!-- clase item__primero -->
-             
-                <div class="item__segundo">
+                
+                <div class="data">
                     <span>
-                         <img   class="item__segundo--imagen" src="./multimedia/estrella.png"  alt="Imagen estrella">
-                        <p>Comprando antes de las 12:00hs.</p>
-                        <p>Envios en el dia.</p>
+                        <a href="./pages/tienda.html">
+                            <img   class="data__segundo--imagen" src="./multimedia/logos/estrella.png"alt="Imagen estrella">
+                            <p>Comprando antes de las 12:00hs. Envios en el dia.</p>
+                        </a>
                     </span>
                 </div> <!-- item__segundo -->
 
-                <div class="item__tercero">
+                <div class="data">
                     <span>
-                        <img class="item__tercero--imagen"  src="./multimedia/estrella.png"   alt="Imagen estrella">
-                    <p>Paga con tarjeta.</p>
-                    <p>De credito o debito.</p>
+                        <a href="./pages/tienda.html">
+                            <img class="data__tercero--imagen"  src="./multimedia/logos/estrella.png"alt="Imagen estrella">
+                            <p>Paga con tarjeta
+                            de credito o debito.</p>
+                        </a>
                     </span>
                 </div> <!-- item__tercero -->
-
-                <div class="item__cuarto">
+                <div class="data">
                     <span>
-                        <img class="item__cuarto--imagen"   src="./multimedia/estrella.png"    alt="Imagen estrella">
-                        <p>Descuento por caja cerrada.</p>
-                        <p>5% OFF llevando caja cerrada</p>
+
+                        <a href="./pages/tienda.html">
+                            <img class="data__cuarto--imagen"   src="./multimedia/logos/estrella.png"alt="Imagen estrella">
+                            <p>Descuento por caja cerrada. <br> 5% OFF llevando caja cerrada</p>
+                        </a>
                     </span>
                 </div> <!-- item__cuarto -->
             </div> <!-- clase item -->
@@ -79,7 +108,7 @@
         <footer class="footer">
             <div class="footer-content">
                 <h3>Catorce Wine</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, dolore.</p>
+                <p>Una forma distinta de tomar vino.</p>
                 <ul class="socials">
                     <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjsw9vIuKaEAxUIrZUCHeXFBZcQFnoECA0QAQ&url=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA&usg=AOvVaw1I60-Ja6y72-wCvsxEihv7&opi=89978449" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiVnNXTuKaEAxU8r5UCHfbVDdcQFnoECA0QAQ&url=https%3A%2F%2Ftwitter.com%2F%3Flang%3Des&usg=AOvVaw3YX5z3gmuFXXOazOkLuKS1&opi=89978449" target="_blank"><i class="fab fa-x"></i></a></li>
@@ -91,9 +120,8 @@
                 <p>copyright &copy;2024 Catorce Wine.</p>
             </div>
         </footer>
-    </div> <!-- container -->
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
