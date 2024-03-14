@@ -1,25 +1,26 @@
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 /* Variables */
 /* Variables */
 /* Variables */
-$goldenrod0   :#DAA520 ;
+$goldenrod0   :#DAA520;
 $goldenrod    :#d4a413;
 $goldenrod1   :#efb810;
 $goldenrod3   :#f3c332;
-$goldenro4    :#EFB810;
 $gold         :#ffd700;
 $antiquewhite :#E6DDCF;
 $black        :#0a0a0a;
+$borde        :#BBAB8C;
 
+/* index */
+/* index */
+/* index */
 
-/* index */
-/* index */
-/* index */
-@font-face{
+@font-face {
     font-family: "CormorantSC-Regular" ;
     src: url("../fuente/cormorant/CormorantSC-Regular.ttf");
 }
@@ -33,6 +34,7 @@ body{
 .main{ min-height: 70vh;
 }
 
+
 /* index */
 /* index */
 /* index */
@@ -41,43 +43,44 @@ body{
     font-family: "CormorantSC-Regular";
     display: flex;
     flex-direction: row;
-    justify-content:space-between;   
+    justify-content:space-between;  
 }
 .encabezado__imagen{
     width:7.1875em;
     margin: 1.5625em;
     border-radius: 3.125rem;
     border-style: hidden;
-    align-self: center;   
+    align-self: center;  
 }
 .encabezado__titulo{
     padding: 0.625em;
     margin: 1.5625em ;
-    color: #E6DDCF;
+    color: $antiquewhite;
 }
 .nav{
     width: 100vw;
-    background: linear-gradient(to right,  #efb810 0%,#f3c332 40%,#daa520 60%,#f3c332 100%);
-    list-style-type: style none; 
+    background: linear-gradient(to right,  $goldenrod1 0%, $goldenrod3 40%, $goldenrod0 60%, $goldenrod3 100%);
+    list-style-type: style none;
     text-align: left;  
     li{
         display: inline-block;
         text-align: left;
         padding: 0.625em;
         text-decoration: none;
-        color: #f3c332;
+        color: $goldenrod3;
         a{
             padding: 0.625em;
             color: rgb(0, 0, 0);
             margin: 0.625em;
             transition: color .4s ease;
-            color: #0a0a0a;
-        } 
+            color: $black;
+        }
         a:hover{
-            color: #efb810;
+            color: $goldenrod1 ;
         }
     }    
 }
+
 
 /* main */
 /* main */
@@ -88,36 +91,41 @@ body{
     width: 9.375em;
     margin: 0.5em;
     a:visited{
-        color: #0a0a0a;
+        color: $black;
     }  
     a:hover{
         transition: color .5s ease;
-        color: #E6DDCF;
+        color: $antiquewhite;
     }
 }
+
 
 .data__primero--imagen{
     width: 1.875em;
 }
 
+
 .data__segundo--imagen{
     width: 1.875em;
 }
 
+
 .data__tercero--imagen{
     width: 1.875em;
 }
+
 
 .data__cuarto--imagen{
     margin: 0.5em;
     width: 1.875em;
 }
 
+
 /* footer */
 /* footer */
 /* footer */
 .footer{
-    background: #daa520;
+    background: $goldenrod0;
     height: auto;
     width:100%;
     font-family: "CormorantSC-Regular" ;
@@ -130,12 +138,14 @@ body{
     flex-direction: column;
     text-align: center;
 
+
     h3{
         font-size: 1.8rem;
         font-weight: 400;
         text-transform: capitalize;
         line-height: 3rem;
     }
+
 
     p{
         max-width: 500px;
@@ -145,6 +155,7 @@ body{
     }
 }
 
+
 .socials{
     list-style: none;
     display: flex;
@@ -152,11 +163,12 @@ body{
     justify-content: center;
     margin: 1rem 0 3rem 0;
 
+
     li{
         margin: 0 10px;
         a{
             text-decoration: none;
-            color: #e6ddcf;  
+            color: $antiquewhite;  
         }
     }
     a i{
@@ -164,11 +176,11 @@ body{
         transition: color .4s ease;
     }
     a:hover i{
-        color:#f3c332;
+        color: $goldenrod3;
     }
 }
 .footer-bottom{
-    color: #0a0a0a;
+    color: $black;
     width: 100%;
     padding: 20px 0;
     text-align: center;
@@ -185,12 +197,14 @@ body{
 }
 
 
+
+
 /* about us */
 /* about us */
 /* about us */
 .about-us{
     background-color: rgb(230, 221, 207);
-        background-image: linear-gradient(rgba(5,7,12,0.40), rgba(5,7,12,0.40)), url(../multimedia/logos/fondo-aboutus.jpeg);
+        background-image: linear-gradient(rgba(5,7,12,0.40), rgba(5,7,12,0.40)), url(../multimedia/logos/fondo-aboutus.jpg);
         background-repeat:no-repeat;
         background-size: cover;
 }
@@ -199,17 +213,20 @@ body{
     font-family: "CormorantSC-Regular";
 }
 
+
 .about-us__titulo{
     margin-left: 0.625em;
     font-size: 3.125em;
-    color: #E6DDCF;
+    color: $antiquewhite;
 }
+
 
 .about-us__subtitulo{
     margin: 0.9375em;
     font-size: 2.8125em;
-    color: #e6ddcfeb;
+    color: $antiquewhite;
 }
+
 
 .about-us__biografia{
     text-align: left;
@@ -218,12 +235,13 @@ body{
     color: #d2c5b2eb
 }
 
+
 .about-us__segundo-titulo{
     text-align: center;
     font-size: 2.1875em;
     margin: 0.9375em;
     background: rgba(112, 112, 112, .40);
-    color: #E6DDCF
+    color: $antiquewhite
 }
 /* Novedades */
 /* Novedades */
@@ -233,17 +251,19 @@ body{
     margin-left: 2.5%;
 }
 
+
 .news__form--email-input{
     border-radius:1%;
     color: grey;
 }
+
 
 .news__form--tell-input{
     border-radius:1%;
     color: grey;
 }
 /* Tienda */
-/* Tienda */       
+/* Tienda */      
 /* Tienda */
 .contenido{
     max-width: 1200px;
@@ -278,16 +298,17 @@ body{
             margin: 30px 0;
         }
         .item .descripcion{
-            color: #0a0a0a;
+            color: $black;
             font-weight: bold;
         }
         .item .precio{
-            color: #f3c332;
+            color: $goldenrod3;
             font-weight: bold;
             font-size: 20px;
         }
     }
 }
+
 
 .seleccion{
     transition: .5s ease;
@@ -301,6 +322,7 @@ body{
     overflow: hidden;
 }
 
+
 .cerrar{
     position: absolute;
     right: 0;
@@ -308,6 +330,7 @@ body{
     right: 20px;
     cursor: pointer;
 }
+
 
 .info{
     padding: 20px;
@@ -317,18 +340,18 @@ body{
         width: 80%;
     }
     h2{
-        color: #0a0a0a;
+        color: $black;
         margin-bottom: 10px;
     }
     p{
         font-size: 14px;
-        color: #0a0a0a;
+        color: $black;
         margin-bottom: 10px;
     }
     .precio{
         font-size: 30px;
         font-weight: bold;
-        color: #daa520;
+        color: $goldenrod0;
         margin-bottom: 10px;
         display: block;
     }
@@ -350,7 +373,7 @@ body{
             border: none;
             padding: 0 25px;
             color: #fff;
-            background-color: #daa520;
+            background-color: $goldenrod0;
         }
     }
 }
@@ -359,8 +382,8 @@ body{
 /*Contacto*/
 /*Contacto*/
 .contacto{
-    background-color: #E6DDCF;
-    text-align: center 
+    background-color: $antiquewhite;
+    text-align: center
 }
 .contacto__titulo{
     padding: 1em;
@@ -383,7 +406,7 @@ body{
     width:4.375em ;
     margin-left: 2%;
     margin-top: 2%;
-    margin-bottom: 2%; 
+    margin-bottom: 2%;
 }
 .box__redes--logo--instagram{
     width: 3.125em;    
@@ -393,20 +416,23 @@ body{
 }
 
 
+
+
 /* media queries */
 /* media queries */
 /* media queries */
 @media screen and (max-width:768px) {
     .body{
-        grid-template-columns: 0.8fr 0.8fr ; 
+        grid-template-columns: 0.8fr 0.8fr ;
     grid-template-rows: 0.8fr 0.1fr 1fr 0.5fr;  
-    grid-template-areas: 
+    grid-template-areas:
     "header header"
     "nav nav"
     "main main"
     "footer footer";
-    } 
+    }
 }
+
 
 @media screen and (max-width:768px) {
     .body{
@@ -419,12 +445,15 @@ body{
     }
 }
 
+
 @media screen and (max-width:768px){
     .about-us{
         background: linear-gradient(to top,  rgba(149,149,149,1) 0%,rgba(13,13,13,1) 0%,rgba(1,1,1,1) 50%,rgba(10,10,10,1) 64%,rgba(10,10,10,1) 64%,rgba(10,10,10,1) 72%,rgba(78,78,78,1) 100%,rgba(56,56,56,1) 100%,rgba(27,27,27,1) 100%,rgba(56,56,56,1) 100%,rgba(78,78,78,1) 100%);
 
+
     }
 }
+
 
 @media screen and (max-width:768px){
     .mostrador .fila{

@@ -52,7 +52,7 @@ body {
 
 .nav {
   width: 100vw;
-  background: linear-gradient(to right, #efb810 0%, #f3c332 40%, #daa520 60%, #f3c332 100%);
+  background: linear-gradient(to right, #efb810 0%, #f3c332 40%, #DAA520 60%, #f3c332 100%);
   list-style-type: style none;
   text-align: left;
 }
@@ -112,7 +112,7 @@ body {
 /* footer */
 /* footer */
 .footer {
-  background: #daa520;
+  background: #DAA520;
   height: auto;
   width: 100%;
   font-family: "CormorantSC-Regular";
@@ -151,7 +151,7 @@ body {
 }
 .socials li a {
   text-decoration: none;
-  color: #e6ddcf;
+  color: #E6DDCF;
 }
 .socials a i {
   font-size: 1.1rem;
@@ -183,7 +183,7 @@ body {
 /* about us */
 .about-us {
   background-color: rgb(230, 221, 207);
-  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../multimedia/logos/fondo-aboutus.jpeg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../multimedia/logos/fondo-aboutus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -202,7 +202,7 @@ body {
 .about-us__subtitulo {
   margin: 0.9375em;
   font-size: 2.8125em;
-  color: rgba(230, 221, 207, 0.9215686275);
+  color: #E6DDCF;
 }
 
 .about-us__biografia {
@@ -326,7 +326,7 @@ body {
 .info .precio {
   font-size: 30px;
   font-weight: bold;
-  color: #daa520;
+  color: #DAA520;
   margin-bottom: 10px;
   display: block;
 }
@@ -349,7 +349,7 @@ body {
   border: none;
   padding: 0 25px;
   color: #fff;
-  background-color: #daa520;
+  background-color: #DAA520;
 }
 
 /*Contacto*/
